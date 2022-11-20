@@ -1,10 +1,10 @@
 
 def get_direction(direction, turn):
-    """
+    """ Функция получения нового направления
 
-    :param direction:
-    :param turn:
-    :return:
+    :param direction: str Текущее напрвление
+    :param turn: int Поворот кратный 45 в интервале -1080 +1080
+    :return: str Новое напрвление
     """
     directions = {
             'N': 0, 'NE': 45, 'E':90,
