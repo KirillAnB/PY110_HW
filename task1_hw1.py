@@ -17,3 +17,16 @@ if __name__ == "__main__":
     item = my_enumarate(list_)
     print(next(item))
     print(next(item))
+def remove_parentheses(chars):
+    counter = 0
+    output = ''
+    for char in chars:
+        if char == '(':
+            counter +=1
+        elif char == ')':
+            counter -= 1
+        elif counter == 0:
+            output += char
+    return output
+
+print(remove_parentheses("hello example (words(more words) here) something"))
