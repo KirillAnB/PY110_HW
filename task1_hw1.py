@@ -18,6 +18,11 @@ if __name__ == "__main__":
     print(next(item))
     print(next(item))
 def remove_parentheses(chars):
+    """
+    Функция для удаления скобок и данных между ними
+    :param chars: str
+    :return: str
+    """
     counter = 0
     output = ''
     for char in chars:
